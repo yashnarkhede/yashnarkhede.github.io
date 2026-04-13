@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Narkhede - Software Engineer</title>
+  <meta name="description" content="Yash Narkhede - Software Engineer. Distributed systems, backend infrastructure, full-stack platforms.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>Y</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">YN</a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Yash Narkhede.</h1>
+      <h2 class="hero-tagline">I build systems that scale.</h2>
+      <p class="hero-bio">Software engineer focused on distributed systems, backend infrastructure, and full-stack platforms. MS CS at <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University</a>, currently building at <a href="#experience">Leaniar LLC</a>.</p>
+      <div class="hero-links">
+        <a href="https://github.com/yash-narkhede" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yash-narkhede/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:yashrajesh.narkhede@stonybrook.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="section-title"><span class="section-num">01.</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Master's student in Computer Science at Stony Brook University. I like building things that work reliably at scale, from distributed database engines to real-time telemetry platforms to workflow automation systems.</p>
+          <p>Right now I'm a Software Engineer at Leaniar LLC in Irvine, CA, working on an Agentic AI automation platform. Before that, I interned at TATA Power Renewable Energy building real-time data pipelines for inverter telemetry.</p>
+          <p>I'm graduating in May 2026 and looking for full-time SWE roles.</p>
+        </div>
+        <div class="about-photo">
+          <div class="photo-wrapper">
+            <img src="assets/img/profile.jpg" alt="Yash Narkhede">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title"><span class="section-num">02.</span> Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Software Engineer <span class="exp-at">@ Leaniar LLC</span></h3>
+          <span class="exp-date">May 2025 - Present &middot; Irvine, CA</span>
+        </div>
+        <p class="exp-desc">Full-stack Agentic AI automation platform. Django, Angular, PostgreSQL, 50+ parallel workers, 30-table schema, CI/CD with Docker.</p>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>SDE Intern <span class="exp-at">@ TATA Power Renewable Energy</span></h3>
+          <span class="exp-date">Nov 2023 - June 2024 &middot; Mumbai</span>
+        </div>
+        <p class="exp-desc">Real-time inverter telemetry platform. Spring Boot, Redis, validation pipelines that reduced bad data by 20%.</p>
+      </div>
+
+    </section>
+
+    <!-- Research Experience -->
+    <section id="research">
+      <h2 class="section-title"><span class="section-num">03.</span> Research Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <h3>Research Assistant <span class="exp-at">@ Stony Brook University</span></h3>
+          <span class="exp-date">Sep 2025 - Dec 2025 &middot; Stony Brook, NY</span>
+        </div>
+        <p class="exp-desc">Built MakoDB, a distributed storage engine on RocksDB with custom MVCC concurrency control and lock-free reservation using atomic CAS operations. Reduced transaction abort rates from 91.6% to 12.8% and improved P99.9 latency by 27%.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title"><span class="section-num">04.</span> Featured Projects</h2>
+
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fas fa-folder-open project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/yash-narkhede" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-name">MakoDB</h3>
+        <p class="project-desc">A distributed storage engine in C++ with custom MVCC concurrency control. Lock-free atomic CAS operations reduced transaction abort rates from 91.6% to 12.8% and improved P99.9 latency by 27%.</p>
+        <ul class="project-tech">
+          <li>C++</li><li>MVCC</li><li>WAL</li><li>Lock-Free</li><li>Distributed Systems</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fas fa-folder-open project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/yash-narkhede" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-name">GoJudge</h3>
+        <p class="project-desc">A full-stack online coding judge with a Go backend and Next.js frontend. Submissions run in isolated Docker containers with resource limits, results stream back via Redis pub/sub, and test cases live on S3.</p>
+        <ul class="project-tech">
+          <li>Go</li><li>Next.js</li><li>Docker</li><li>Redis</li><li>S3</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <i class="fas fa-folder-open project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/yash-narkhede" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-name">FixGenie</h3>
+        <p class="project-desc">An agentic AI system that autonomously resolves CI/CD incidents. LLM agents reason over build logs using a RAG pipeline backed by FAISS, then validate fixes in Docker sandboxes before merging.</p>
+        <ul class="project-tech">
+          <li>Python</li><li>FastAPI</li><li>LangChain</li><li>FAISS</li><li>Docker</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title"><span class="section-num">05.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>Python, C++, Java, Go, TypeScript, C, SQL</p>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <p>Django, Spring Boot, Node.js, FastAPI, Express, gRPC</p>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <p>React, Next.js, Angular, Redux</p>
+        </div>
+        <div class="skill-group">
+          <h4>Data</h4>
+          <p>PostgreSQL, MongoDB, Redis, Kafka, Prisma</p>
+        </div>
+        <div class="skill-group">
+          <h4>Infrastructure</h4>
+          <p>Docker, Kubernetes, GCP, AWS, CI/CD, Git</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title"><span class="section-num">06.</span> Education</h2>
+      <div class="edu-item">
+        <h3>MS Computer Science</h3>
+        <p>Stony Brook University &middot; 2024 - 2026</p>
+      </div>
+      <div class="edu-item">
+        <h3>BE Computer Engineering (Hons. AI-ML)</h3>
+        <p>University of Mumbai &middot; 2020 - 2024 &middot; GPA: 3.89/4</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="contact-heading">Get In Touch</h2>
+      <p class="contact-text">I'm currently looking for full-time SWE opportunities. Whether you have a question or just want to say hi, feel free to reach out.</p>
+      <a href="mailto:yashrajesh.narkhede@stonybrook.edu" class="contact-btn">Say Hello</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/yash-narkhede" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yash-narkhede/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:yashrajesh.narkhede@stonybrook.edu"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>Built by Yash Narkhede</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById('themeToggle');
+    const icon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      html.setAttribute('data-theme', saved);
+      icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+
+    toggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    });
+
+    // Mobile nav
+    const hamburger = document.getElementById('navHamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+
+    // Smooth scroll + close mobile nav
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) window.scrollTo({ top: t.offsetTop - 70, behavior: 'smooth' });
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+      });
+    });
+
+    // Fade in on scroll
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section, .project-card').forEach(el => obs.observe(el));
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+    });
+  </script>
+</body>
+</html>
